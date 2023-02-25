@@ -24,17 +24,9 @@
     },
     "name": "contact-bank",
     "version": "1.0.0",
-    "main": "server.js",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/GregPetropoulos/Contact-Bank.git"
+    "main": "server.js"
+     
     },
-    "author": "Greg Petropoulos",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/GregPetropoulos/Contact-Bank/issues"
-    },
-    "homepage": "https://github.com/GregPetropoulos/Contact-Bank#readme",
-    "description": ""
+   
   }
   
