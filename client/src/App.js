@@ -1,6 +1,3 @@
-// Author: Greg Petropoulos
-// 8.22.22-8.25.22
-// Contact Bank
 
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
