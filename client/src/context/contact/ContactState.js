@@ -26,7 +26,7 @@ export const useContacts = () => {
 //*GET ALL CONTACTS
 export const getAllContacts = async (dispatch) => {
   try {
-    const response = await fetch('api/contacts');
+    const response = await fetch('https://contacts-be.onrender.com/api/contacts');
     const data = await response.json();
     dispatch({
       type: GET_CONTACTS,
@@ -48,7 +48,7 @@ export const addContact = async (dispatch, contact) => {
     body: JSON.stringify(contact)
   };
   try {
-    const response = await fetch('api/contacts', options);
+    const response = await fetch('https://contacts-be.onrender.com/api/contacts', options);
     const data = await response.json();
     dispatch({
       type: ADD_CONTACT,
@@ -70,7 +70,7 @@ export const editContact = async (dispatch, contact) => {
     body: JSON.stringify(contact)
   };
   try {
-    const response = await fetch(`api/contacts/${contact._id}`, options);
+    const response = await fetch(`https://contacts-be.onrender.com/api/contacts/${contact._id}`, options);
     const data = await response.json();
     dispatch({
       type: UPDATE_CONTACT,
@@ -91,7 +91,7 @@ export const deleteContact = async (dispatch, id) => {
     // headers:{},
   };
   try {
-    const response = await fetch(`api/contacts/${id}`, options);
+    const response = await fetch(`https://contacts-be.onrender.com/api/contacts/${id}`, options);
     const data = await response.json();
     dispatch({
       type: DELETE_CONTACT,
