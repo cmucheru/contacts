@@ -7,7 +7,7 @@ const Contact = require('../models/Contact');
 
 //**PROTECT CREDS WITH THIS .ENV INSTEAD OF BRADS' DEFAULTJSON
 require('dotenv').config();
-const db = process.env.MY_MONGO_URI;
+const db = 'mongodb+srv://cmucheru:GthLzWav-V6fBtP@contacts.6j3hox2.mongodb.net/?retryWrites=true&w=majority';
 
 // STAND ALONE CONNECTION TO DB;
 mongoose
